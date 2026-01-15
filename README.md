@@ -3,7 +3,7 @@ Automatically converts unstructured, freeform customer support notes into operat
 
 #### ‼️ Use Jupyter Notebook - Not Google Colab
 
-# Support Notes Extraction & Analysis
+# Freeform Support Notes Extraction & Analysis
 
 ## Objective
 
